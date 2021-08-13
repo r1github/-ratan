@@ -6,15 +6,16 @@ void main()
     scanf("%d\n",&t);
     while(t-->0){
         int prod=1;
-        //printf();
+        //printf("Enter the number of elements you want to enter in an array: ");
         scanf("%d\n",&n);
         //printf("Enter elements:");
         for(i=0;i<n;i++){
             scanf("%d",&arr[i]);
+            printf("\t");
         }
         for(i=0;i<n;i++){
             prod=prod*arr[i];
         }
-        printf("\n%d", prod);
+        printf("\n %d", prod);
     }
 }
