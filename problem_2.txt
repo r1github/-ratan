@@ -3,19 +3,21 @@ void main()
 {
     int arr[15]; 
     int i,n,t;
+    //printf("Enter the number of test cases: ")
     scanf("%d\n",&t);
-    while(t-->0){
+    while(t-- > 0){
         int prod=1;
         //printf("Enter the number of elements you want to enter in an array: ");
         scanf("%d\n",&n);
         //printf("Enter elements:");
         for(i=0;i<n;i++){
             scanf("%d",&arr[i]);
-            printf("\t");
         }
         for(i=0;i<n;i++){
             prod=prod*arr[i];
         }
-        printf("\n %d", prod);
+        printf("%d\n\n",prod);
     }
 }
+
+
